@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             if (comer_check_box.isChecked) pasatiempos += getString(R.string.comer)
 
             val ciudadDeNacimiento = ciudad_nacimiento_spinner.selectedItem
-
+//prueba
             respuesta_text_view.text = getString(R.string.respuesta, nombre, correo, telefono, genero, pasatiempos, ciudadDeNacimiento)
         }
     }
