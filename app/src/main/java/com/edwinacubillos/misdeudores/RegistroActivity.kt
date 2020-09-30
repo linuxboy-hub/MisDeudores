@@ -1,7 +1,9 @@
 package com.edwinacubillos.misdeudores
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_registro.*
 
@@ -16,13 +18,27 @@ class RegistroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro)
 
+        val datosRecibidos = intent.extras
+        val numeroEnviado = datosRecibidos?.getInt("numero")
+        Toast.makeText(this, "El número enviado es $numeroEnviado", Toast.LENGTH_SHORT).show()
+
+
         Log.d("Método", "onCreate")
 
         registrar_button.setOnClickListener {
-            val nombre = nombre_edit_text.text.toString()
             val correo = correo_edit_text.text.toString()
-            val telefono = telefono_edit_text.text.toString()
             val contrasena = contraseña_edit_text.text.toString()
+
+            val intent = Intent(this, LoginActivity::class.java)
+            intent.putExtra("correo", correo)
+            intent.putExtra("contrasena", contrasena)
+            startActivity(intent)
+            finish()
+
+            val nombre = nombre_edit_text.text.toString()
+
+            val telefono = telefono_edit_text.text.toString()
+
             val repContrasena = rep_contraseña_edit_text.text.toString()
             val genero =
                 if (masculino_radio_button.isChecked) getString(R.string.masculino) else getString(R.string.femenino)
@@ -43,6 +59,13 @@ class RegistroActivity : AppCompatActivity() {
                 ciudadDeNacimiento
             )
         }
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
     override fun onStart() {
@@ -75,3 +98,9 @@ class RegistroActivity : AppCompatActivity() {
         Log.d("Método", "onRestart")
     }
 }
+
+
+
+
+
+
