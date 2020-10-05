@@ -17,6 +17,12 @@
     <string name="cine">Cine</string>
     <string name="comer">Comer</string>
     <string name="lugar_de_nacimiento">Lugar de nacimiento</string>
+    <string name="digite_nombre">Nombre</string>
+    <string name="deuda">Valor deuda</string>
+    <string name="guardar">Guardar</string>
+    <string name="buscar">Buscar</string>
+    <string name="campo_obligatorio">* Campo obligatorio</string>
+    <string name="crear">Crear</string>
 
     <string-array name="ciudad_nacimiento">
         <item>Seleccione una ciudad</item>

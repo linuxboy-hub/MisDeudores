@@ -1,10 +1,12 @@
-package com.edwinacubillos.misdeudores
+package com.edwinacubillos.misdeudores.ui.registro
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.edwinacubillos.misdeudores.R
+import com.edwinacubillos.misdeudores.ui.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_registro.*
 
 class RegistroActivity : AppCompatActivity() {

@@ -1,8 +1,10 @@
-package com.edwinacubillos.misdeudores
+package com.edwinacubillos.misdeudores.ui.splash
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.edwinacubillos.misdeudores.R
+import com.edwinacubillos.misdeudores.ui.login.LoginActivity
 import java.util.*
 import kotlin.concurrent.timerTask
 

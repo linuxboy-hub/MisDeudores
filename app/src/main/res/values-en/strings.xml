@@ -18,6 +18,10 @@
     <string name="cine">Cinema</string>
     <string name="comer">Eat</string>
     <string name="lugar_de_nacimiento">City of Birth</string>
+    <string name="digite_nombre">Name</string>
+    <string name="deuda">Debt</string>
+    <string name="guardar">Save</string>
+    <string name="buscar">Search</string>
 
     <string-array name="ciudad_nacimiento">
         <item>Choose city</item>
