@@ -24,11 +24,11 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         transaction = manager.beginTransaction()
         when (item.itemId) {
-            R.id.menu_crear -> {
+            R.id.nav_crear -> {
                 val crearFragment = CrearFragment()
                 transaction.replace(R.id.contenedor, crearFragment).commit()
             }
-            R.id.menu_buscar -> {
+            R.id.nav_buscar -> {
                 val buscarFragment = BuscarFragment()
                 transaction.replace(R.id.contenedor, buscarFragment).commit()
             }
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_overflow, menu)
+        menuInflater.inflate(R.menu.menu, menu)
         return true
     }
 }
