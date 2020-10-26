@@ -16,7 +16,7 @@
         app:helperText="@string/campo_obligatorio">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nombre_buscar_text_view"
+            android:id="@+id/nombre_buscar_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/digite_nombre"
@@ -25,7 +25,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buscar_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
