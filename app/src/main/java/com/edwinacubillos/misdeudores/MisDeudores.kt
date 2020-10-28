@@ -17,6 +17,7 @@ class MisDeudores : Application() {
             this,
             DeudorDatabase::class.java,
             "deudor_DB"
-        ).build()
+        ).allowMainThreadQueries()
+            .build()
     }
 }

@@ -29,7 +29,7 @@ class RegistroActivity : AppCompatActivity() {
 
         registrar_button.setOnClickListener {
             val correo = correo_edit_text.text.toString()
-            val contrasena = contraseña_edit_text.text.toString()
+            val contrasena = contrasena_edit_text.text.toString()
 
             val intent = Intent(this, LoginActivity::class.java)
             intent.putExtra("correo", correo)
@@ -41,7 +41,7 @@ class RegistroActivity : AppCompatActivity() {
 
             val telefono = telefono_edit_text.text.toString()
 
-            val repContrasena = rep_contraseña_edit_text.text.toString()
+            val repContrasena = rep_contrasena_edit_text.text.toString()
             val genero =
                 if (masculino_radio_button.isChecked) getString(R.string.masculino) else getString(R.string.femenino)
 

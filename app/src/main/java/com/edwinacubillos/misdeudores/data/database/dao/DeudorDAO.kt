@@ -1,9 +1,6 @@
 package com.edwinacubillos.misdeudores.data.database.dao
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Query
+import androidx.room.*
 import com.edwinacubillos.misdeudores.data.database.entities.Deudor
 
 @Dao
@@ -17,4 +14,10 @@ interface DeudorDAO {
 
     @Delete
     fun deleteDeudor(deudor: Deudor)
+
+    @Update
+    fun updateDeudor(deudor: Deudor)
+
+    @Query("SELECT * FROM tabla_deudor")
+    fun getDeudores(): List<Deudor>
 }
