@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.edwinacubillos.misdeudores.MisDeudores
 import com.edwinacubillos.misdeudores.R
@@ -37,10 +38,13 @@ class CrearFragment : Fragment() {
             val deudorDAO: DeudorDAO = MisDeudores.database.DeudorDAO()
 
             deudorDAO.insertDeudor(deudor)
+
+            Toast.makeText(context, "Deudor agregado", Toast.LENGTH_SHORT).show()
+            binding.nombreEditText.setText("")
+            binding.telefonoEditText.setText("")
+            binding.valorEditText.setText("")
         }
     }
 
-    companion object {
-
-    }
+    companion object
 }

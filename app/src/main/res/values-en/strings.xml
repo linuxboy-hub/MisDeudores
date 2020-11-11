@@ -22,6 +22,19 @@
     <string name="deuda">Debt</string>
     <string name="guardar">Save</string>
     <string name="buscar">Search</string>
+    <string name="iniciar_sesion">Iniciar Sesion</string>
+
+
+    <string name="nombre_vacio">Enter your name!</string>
+    <string name="telefono_vacio">Enter your phone number!</string>
+    <string name="mail_vacio">Enter your email!</string>
+    <string name="password_vacio">Enter your password!</string>
+    <string name="repassword_vacio">Repeat your password!</string>
+    <string name="min_password">Your password must be at least 6 digits long!</string>
+    <string name="nomatch_password">Passwords do not match!</string>
+    <string name="exitoso">Successful registration!</string>
+    <string name="lista">Ver Todos</string>
+
 
     <string-array name="ciudad_nacimiento">
         <item>Choose city</item>
@@ -31,4 +44,18 @@
         <item>Barranquilla</item>
         <item>Bucaramanga</item>
     </string-array>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="actualizar">Update</string>
+    <string name="borrar">Delete</string>
+    <string name="title_activity_bottom">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>

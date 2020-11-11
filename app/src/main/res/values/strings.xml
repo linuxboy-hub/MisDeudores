@@ -7,7 +7,7 @@
     <string name="telefono">Teléfono</string>
     <string name="contraseña">Contraseña</string>
     <string name="repita_contraseña">Repita Contraseña</string>
-    <string name="registrar">Registrar</string>
+    <string name="registrar">REGISTRARSE</string>
     <string name="respuesta">Nombre: %s \nCorreo: %s \nTeléfono: %s \nGénero: %s \nPasatiempo: %s \nCiudad de Nacimiento: %s</string>
     <string name="masculino">Masculino</string>
     <string name="femenino">Femenino</string>
@@ -23,6 +23,16 @@
     <string name="buscar">Buscar</string>
     <string name="campo_obligatorio">* Campo obligatorio</string>
     <string name="crear">Crear</string>
+
+    <string name="nombre_vacio">Ingrese su nombre!</string>
+    <string name="telefono_vacio">Ingrese su teléfono!</string>
+    <string name="mail_vacio">Ingrese su correo!</string>
+    <string name="password_vacio">Ingrese su contraseña!</string>
+    <string name="repassword_vacio">Repita su contraseña!</string>
+    <string name="min_password">Su contraseña debe de tener como mínimo 6 dígitos!</string>
+    <string name="nomatch_password">Contraseñas no coinciden!</string>
+    <string name="exitoso">Registro exitoso!</string>
+
 
     <string-array name="ciudad_nacimiento">
         <item>Seleccione una ciudad</item>
@@ -54,4 +64,6 @@
     <string name="title_activity_tabbed">TabbedActivity</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="lista">Ver Todos</string>
 </resources>

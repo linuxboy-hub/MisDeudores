@@ -32,10 +32,12 @@ class BorrarFragment : Fragment() {
             val deudorDAO: DeudorDAO = MisDeudores.database.DeudorDAO()
             val deudor = deudorDAO.searchDeudor(nombre)
 
-            if (deudor != null)
+            if (deudor != null) {
                 deudorDAO.deleteDeudor(deudor)
-            else {
-                Toast.makeText(context, "No existe", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Deudor eliminado", Toast.LENGTH_SHORT).show()
+                binding.nombreBorrarEditText.setText("")
+            } else {
+                Toast.makeText(context, "Este usuario no existe", Toast.LENGTH_SHORT).show()
             }
         }
     }

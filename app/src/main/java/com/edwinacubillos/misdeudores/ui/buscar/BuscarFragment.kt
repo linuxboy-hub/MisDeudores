@@ -33,8 +33,8 @@ class BuscarFragment : Fragment() {
             val deudor = deudorDAO.searchDeudor(nombre)
 
             if (deudor != null) {
-                binding.telefonoTextView.text = deudor.telefono
-                binding.valorTextView.text = deudor.valor.toString()
+                binding.telefonoTextView.text = "Teléfono: ".plus(deudor.telefono)
+                binding.valorTextView.text = "Valor: ".plus(deudor.valor.toString())
             } else {
                 Toast.makeText(context, "No existe", Toast.LENGTH_SHORT).show()
             }

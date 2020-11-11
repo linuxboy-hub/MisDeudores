@@ -45,7 +45,7 @@ class ActualizarFragment : Fragment() {
                     binding.telefonoEditText.setText(deudor.telefono)
                     binding.valorEditText.setText(deudor.valor?.toString())
                 } else {
-                    Toast.makeText(context, "No existe", Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, "Este deudor no existe", Toast.LENGTH_LONG).show()
                 }
             } else {  //actualizando
                 val deudor = Deudor(idDeudor, nombre, telefono, valor.toLong())
@@ -53,6 +53,10 @@ class ActualizarFragment : Fragment() {
                 deudorDAO.updateDeudor(deudor)
                 isSearching = true
                 binding.modificarButton.text = getString(R.string.buscar)
+                Toast.makeText(context, "Datos actualizados", Toast.LENGTH_SHORT).show()
+                binding.nombreBuscarEditText.setText("")
+                binding.telefonoEditText.setText("")
+                binding.valorEditText.setText("")
             }
         }
     }

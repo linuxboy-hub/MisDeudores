@@ -27,6 +27,8 @@ class ListaFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding = FragmentListaBinding.bind(view)
+        val deudorDAO = MisDeudores.database.DeudorDAO()
+        listDeudores = deudorDAO.getDeudores()
 
         binding.deudoresRecyclerView.layoutManager =
             LinearLayoutManager(context, RecyclerView.VERTICAL, false)
@@ -36,8 +38,7 @@ class ListaFragment : Fragment() {
 
         binding.deudoresRecyclerView.adapter = deudoresRVAdapter
 
-        val deudorDAO = MisDeudores.database.DeudorDAO()
-        listDeudores = deudorDAO.getDeudores()
+
 
         deudoresRVAdapter.notifyDataSetChanged()
     }
